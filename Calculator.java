@@ -24,8 +24,14 @@ public class Calculator {
             break;
             case 3: System.out.println("The product of " + number1 + " and " + number2 + " is " + multiplication + ".");
             break;
-            case 4: System.out.println("The quotient of " + number1 + " and " + number2 + " is " + division + ".");
-            break;
+            case 4: 
+            if(number2 == 0){
+                System.out.println("The quotient of " + number1 + " and " + number2 + " is undefined because " + number2 + " is zero. (Divide by zero not allowed)");
+            }
+            else{
+                System.out.println("The quotient of " + number1 + " and " + number2 + " is " + division + ".");
+                break;
+            }
         }
         
     }
